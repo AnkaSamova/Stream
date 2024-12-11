@@ -21,6 +21,8 @@ public class Main {
 
         Map<String, List<Animal>> animal = animals.stream()
                 .collect(Collectors.groupingBy(Animal::getName));
-        System.out.println(animal);
+        for (Map.Entry<String, List<Animal>> element : animal.entrySet()) {
+            System.out.println(element);
+        }
     }
 }

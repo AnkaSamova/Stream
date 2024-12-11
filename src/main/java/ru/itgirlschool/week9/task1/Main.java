@@ -25,7 +25,11 @@ public class Main {
             Animal animal = animalOptional.get();
             System.out.println(animal.getAge());
         } else {
-            throw new IllegalArgumentException("В коллекции нет льва");
+            try {
+                throw new IllegalArgumentException("В коллекции нет льва");
+            } catch (IllegalArgumentException e) {
+                System.out.println("Исключение: " + e);
+            }
         }
     }
 }

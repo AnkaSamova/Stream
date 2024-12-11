@@ -27,6 +27,6 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Животное: " + getName() + "; возраст: " + getAge() + "\n";
+        return "Животное: " + getName() + "; возраст: " + getAge();
     }
 }
